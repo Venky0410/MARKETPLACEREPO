@@ -1,9 +1,9 @@
 branch-defaults:
   main:
-    environment: x23180871-PROJECT-env
+    environment: x23180871-CPPMARKETPLACEFINAL-env
     group_suffix: null
 global:
-  application_name: x23180871_PROJECT
+  application_name: x23180871MARKETPLACEFINAL
   branch: null
   default_ec2_keyname: null
   default_platform: Python 3.11
