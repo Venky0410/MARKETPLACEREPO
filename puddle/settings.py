@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-j4ippt+3h39u4ontllpc8a(4h&^god(7aicz#@q^sl_(w)2otp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -83,18 +83,16 @@ WSGI_APPLICATION = 'puddle.wsgi.application'
 
 #DATABASES = {
 #    'default': {
-#     'ENGINE': 'django.db.backends.sqlite3',
+#        'ENGINE': 'django.db.backends.sqlite3',
 #        'NAME': str(BASE_DIR / 'db.sqlite3'),  # Convert to string
 #    }
 #}
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),  # Correct way to define path with os.path.join
     }
 }
-
 #DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.sqlite3',
