@@ -87,13 +87,18 @@ WSGI_APPLICATION = 'puddle.wsgi.application'
 #        'NAME': str(BASE_DIR / 'db.sqlite3'),  # Convert to string
 #    }
 #}
+#DATABASES = {
+  #  'default': {
+ #       'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),  # Correct way to define path with os.path.join
+#    }
+#}
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),  # Correct way to define path with os.path.join
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
