@@ -87,6 +87,7 @@ WSGI_APPLICATION = 'puddle.wsgi.application'
 #        'NAME': str(BASE_DIR / 'db.sqlite3'),  # Convert to string
 #    }
 #}
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
