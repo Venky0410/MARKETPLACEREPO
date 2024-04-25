@@ -4,6 +4,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    path('payment/', include('payment.urls')),
     path('', include('core.urls')),
     path('items/', include('item.urls')),
     path('dashboard/', include('dashboard.urls')),

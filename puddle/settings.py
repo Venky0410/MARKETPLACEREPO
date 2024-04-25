@@ -30,6 +30,7 @@ ALLOWED_HOSTS = ["*"]
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 
 # Application definition
@@ -45,6 +46,7 @@ INSTALLED_APPS = [
     'core',
     'dashboard',
     'item',
+    'payment',
 ]
 
 MIDDLEWARE = [
@@ -65,7 +67,8 @@ TEMPLATES = [
         'DIRS': [os.path.join(BASE_DIR, 'core/templates'),
                  os.path.join(BASE_DIR, 'item/templates'),
                  os.path.join(BASE_DIR, 'dashboard/templates'),
-                 os.path.join(BASE_DIR, 'conversation/templates')],
+                 os.path.join(BASE_DIR, 'conversation/templates'),
+                 os.path.join(BASE_DIR, 'payment/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
